@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   const handleClick = (name) => {
     setIsActive(name);
-    if (name === "dashboard") {
+    if (name === "dashboard" || name==="payment" || name === "logout" || name === "withdraw") {
       navigate("/");
     } else {
       navigate(`/${name}`);
